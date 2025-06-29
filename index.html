@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Aed OÜ</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style-tailwind.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-green-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-green-100">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-serif font-bold text-green-800">Tea Aed OÜ</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-green-600 transition-colors font-medium">Minust</a>
+                    <a href="#projects" class="text-gray-700 hover:text-green-600 transition-colors font-medium">Tööd</a>
+                    <a href="#media" class="text-gray-700 hover:text-green-600 transition-colors font-medium">Meedia</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 transition-colors font-medium">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-r from-green-600 via-green-700 to-emerald-800 text-white overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-10"></div>
+        <div class="relative max-w-6xl mx-auto px-4 py-24 text-center">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
+                Tea Aed OÜ
+            </h1>
+            <p class="text-xl md:text-2xl text-green-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Loon ilusaid ja funktsionaalseid rohealasid, mis toovad rõõmu ja rahu igasse keskkonda
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="bg-white text-green-700 px-8 py-4 rounded-full font-semibold hover:bg-green-50 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Vaata töid
+                </a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-green-700 transition-all duration-300">
+                    Võta ühendust
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        <!-- About Section -->
+        <section id="about" class="mb-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">Minust</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto mb-8"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Olen kirgliku aedniku ja maastikuarhitekti, kes usub, et iga ruum võib olla ilus ja funktsionaalne. 
+                        Minu missioon on luua rohealasid, mis toovad inimestele rõõmu ja harmooniat.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Aastate jooksul olen aidanud paljudel klientidel teostada oma unistuste aiad ja roheala projekte, 
+                        kombineerides professionaalset oskusteavet loomingulise lähenemisega.
+                    </p>
+                    <div class="flex flex-wrap gap-3 pt-4">
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Maastikudisain</span>
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Peenarde hooldus</span>
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Vertikaalaed</span>
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Konsultatsioonid</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-emerald-600 rounded-3xl transform rotate-6"></div>
+                    <div class="relative bg-white p-8 rounded-3xl shadow-xl">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-serif font-semibold text-gray-900 mb-2">Tea Ilves</h3>
+                            <p class="text-gray-600">Aednik & Maastikuarhitekt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">Tehtud tööd</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Siit leiad valiku minu viimaste projektide seast, mis näitavad erinevaid lähenemisi ja lahendusi
+                </p>
+            </div>
+            <div class="space-y-16">
+                <!-- Project 1 -->
+                <div class="group">
+                    <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="p-8 md:p-12">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-white font-bold text-lg">1</span>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-serif font-bold text-gray-900">Peenarde hooldus</h3>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <!-- First Image -->
+                                <div class="relative group/image">
+                                    <div class="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl">
+                                        <img src="resources/before.jpg" alt="Garden Before" class="w-full h-80 object-cover group-hover/image:scale-110 transition-transform duration-700">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300"></div>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 right-4">
+                                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">Enne</span>
+                                        <p class="text-white text-sm mt-2 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
+                                            Ülekasvanud ja hooldamata ala
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Second Image -->
+                                <div class="relative group/image">
+                                    <div class="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl">
+                                        <img src="resources/after.jpg" alt="Garden After" class="w-full h-80 object-cover group-hover/image:scale-110 transition-transform duration-700">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300"></div>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 right-4">
+                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Pärast</span>
+                                        <p class="text-white text-sm mt-2 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
+                                            Kaunis ja hooldatud istutusala
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <div class="prose prose-lg max-w-none">
+                                <p class="text-gray-700 leading-relaxed text-lg">
+                                    Sai üks õnnetu istutusala ilusaks tehtud. Siit ka hea näide sellest, et okaspuud vajavad 
+                                    igal aastal õiget hooldust. Projekt hõlmas täielikku ala ümberkujundamist, mullaparandust 
+                                    ja uute taimede istutamist.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group">
+                    <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="p-8 md:p-12">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-white font-bold text-lg">2</span>
+                                </div>
+                                <h3 class="text-2xl md:text-3xl font-serif font-bold text-gray-900">Vertikaalne aed</h3>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                <!-- First Image -->
+                                <div class="relative group/image">
+                                    <div class="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl">
+                                        <img src="resources/vertical_garden.jpg" alt="Vertical Garden" class="w-full h-80 object-cover group-hover/image:scale-110 transition-transform duration-700">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300"></div>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 right-4">
+                                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">Enne</span>
+                                        <p class="text-white text-sm mt-2 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Second Image -->
+                                <div class="relative group/image">
+                                    <div class="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl">
+                                        <img src="resources/vertical_garden2.jpg" alt="Vertical Garden After" class="w-full h-80 object-cover group-hover/image:scale-110 transition-transform duration-700">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300"></div>
+                                    </div>
+                                    <div class="absolute bottom-4 left-4 right-4">
+                                        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Pärast</span>
+                                        <p class="text-white text-sm mt-2 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300">
+                                            Elav vertikaalne aed maitsetaimede ja lilledega
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Description -->
+                            <div class="prose prose-lg max-w-none">
+                                <p class="text-gray-700 leading-relaxed text-lg">
+                                    See projekt hõlmas kaasaegse vertikaalse aia loomist väikesele alale. Tööde hulka kuulus 
+                                    vertikaalse struktuuri projekteerimine ja ehitamine, erinevate maitsetaimede ja lillede 
+                                    istutamine ning tõhusa niisutussüsteemi paigaldamine.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Media Section -->
+        <section id="media" class="mb-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">Meedia kajastused</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Vaata, kuidas meedia on minu tööd kajastanud
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group">
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-green-500">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-900 mb-2">Maaleht</h3>
+                                <a href="https://maaleht.delfi.ee/artikkel/120292591/gardesti-taimevolur-tea-meil-on-taimedelt-palju-oppida" target="_blank" class="text-green-600 hover:text-green-800 font-medium text-lg leading-relaxed group-hover:underline transition-colors duration-300">
+                                    Gardesti taimevõlur Tea: meil on taimedelt palju õppida!
+                                </a>
+                                <p class="text-gray-500 text-sm mt-2">Põhjalik intervjuu minu töö ja filosoofia kohta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-emerald-500">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-900 mb-2">Ruut FM</h3>
+                                <a href="https://ruutfm.treraadio.ee/kordus/6831/hommikuintervjuu-tea-ilves-toataimed-talvisel-ajal" target="_blank" class="text-green-600 hover:text-green-800 font-medium text-lg leading-relaxed group-hover:underline transition-colors duration-300">
+                                    HOMMIKUINTERVJUU: TEA ILVES, toataimed talvisel ajal
+                                </a>
+                                <p class="text-gray-500 text-sm mt-2">Raadioesinemine taimede hooldamise teemal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl shadow-2xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <!-- Contact Form -->
+                    <div class="p-8 md:p-12">
+                        <div class="mb-8">
+                            <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">Võta ühendust</h2>
+                            <p class="text-lg text-gray-600">
+                                Kas sul on projekt, mida tahaksid arutada? Kirjuta mulle!
+                            </p>
+                        </div>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Nimi *
+                                    </label>
+                                    <input type="text" id="name" name="name" 
+                                           class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-gray-900 placeholder-gray-400" 
+                                           placeholder="Sinu nimi" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        Email *
+                                    </label>
+                                    <input type="email" id="email" name="email" 
+                                           class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-gray-900 placeholder-gray-400" 
+                                           placeholder="sinu@email.ee" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Sõnum *
+                                </label>
+                                <textarea id="message" name="message" rows="5" 
+                                          class="w-full px-4 py-3 bg-white border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 text-gray-900 placeholder-gray-400 resize-none" 
+                                          placeholder="Kirjelda oma projekti või küsimust..." required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" 
+                                        class="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-300">
+                                    <span class="flex items-center justify-center">
+                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                        </svg>
+                                        Saada sõnum
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="bg-gradient-to-br from-green-600 to-emerald-700 p-8 md:p-12 text-white">
+                        <div class="h-full flex flex-col justify-center">
+                            <h3 class="text-2xl font-serif font-bold mb-8">Kontaktandmed</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-green-100 text-sm">Telefon</p>
+                                        <a href="tel:+37255555555" class="text-white font-semibold text-lg hover:text-green-100 transition-colors">
+                                            +372 5555 5555
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-green-100 text-sm">Email</p>
+                                        <a href="mailto:tea.ilves@example.com" class="text-white font-semibold text-lg hover:text-green-100 transition-colors">
+                                            tea.ilves@example.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 pt-8 border-t border-white/20">
+                                <p class="text-green-100 text-sm">
+                                    Tavaliselt vastan 24 tunni jooksul
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-serif font-bold mb-4">Tea Aed OÜ</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Professionaalsed aiahoolduse ja maastikuarhitektuuri teenused. 
+                        Loome koos unistuste aia!
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Teenused</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Maastikudisain</li>
+                        <li>Peenarde hooldus</li>
+                        <li>Vertikaalaed</li>
+                        <li>Konsultatsioonid</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontakt</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>+372 5555 5555</p>
+                        <p>tea.ilves@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
+                <p>&copy; 2025 Tea Aed OÜ. Kõik õigused kaitstud.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</html>
